@@ -4,7 +4,7 @@ To download the PDFs, click the name of the .pdf file. It will open in a new pag
 
 To download the R scripts, click the name of the .R script. It will open a new page and you will see the script there. Then right click "Raw" and click "Save Link As ...". Download the R script and open it up in Rstudio.
 
-All code in this repository is released with the GNU GPL v3 or later license. For more information, http://www.gnu.org/licenses/gpl.html
+All code in this repository is released with the GNU GPL v3 license or later. For more information, http://www.gnu.org/licenses/gpl.html
 
 All content is released with the Creative Commons license 
 Attribution-NonCommercial-ShareAlike 4.0 International. For more information, http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US
