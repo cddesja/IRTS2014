@@ -75,7 +75,7 @@ write.table(state.x77,file = "statex77.txt")
 read.table(file="statex77.txt")
 
 # But we need to save it as an object
-state <- read.table(file="(statex77.txt")
+state <- read.table(file="statex77.txt")
 
 # Similar functions exist to read data directly from SPSS, CSV files, etc #
 # Check out the foreign package #
