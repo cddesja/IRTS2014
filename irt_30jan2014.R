@@ -69,10 +69,10 @@ state.x77[19:21, c(1,3,6)]
 state.x77["Alabama",]
 
 # To write the data to a text file
-write.table(state.x77,file = "(statex77.txt")
+write.table(state.x77,file = "statex77.txt")
 
 # To read it back in
-read.table(file="(statex77.txt")
+read.table(file="statex77.txt")
 
 # But we need to save it as an object
 state <- read.table(file="(statex77.txt")
