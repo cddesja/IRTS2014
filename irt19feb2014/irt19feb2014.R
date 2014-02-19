@@ -44,9 +44,8 @@ rasch.mirt <- mirt(lsat.data, 1,itemtype = "Rasch")
 coef(rasch.mirt)
 
 rasch.mirt
-# This gives us information on
-# AIC, sample size corrected AIC
-# BIC, 
+# The provides various fit output measures
+
 
 
 # Let's fit a 2-PL model
