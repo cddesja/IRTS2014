@@ -83,14 +83,31 @@ m3 <- multinom(Comfort.raw ~ total, data = Science.n)
 anova(m2,m3)
 
 # Automating this ..
+
+NAMES <- names(Science.n)
 for(i in 1:7){
   m1 <- multinom(Science.n[,i] ~ total + Gender + total:Gender, data = Science.n)
   m2 <- multinom(Science.n[,i] ~ total + Gender, data = Science.n)
   m3 <- multinom(Science.n[,i] ~ total, data = Science.n)
-
+  
+  cat("\n\n This is for :",NAMES[i], "\n\n")
+  
   print(anova(m1,m2))
   print(anova(m2,m3))
 }
+
+for(i in 1:7){
+  m1 <- polr(ordered(Science.n[,i]) ~ total + Gender + total:Gender, data = Science.n)
+  m2 <- polr(ordered(Science.n[,i]) ~ total + Gender, data = Science.n)
+  m3 <- polr(ordered(Science.n[,i]) ~ total, data = Science.n)
+  
+  cat("\n\n This is for :",NAMES[i], "\n\n")
+  print(anova(m1,m2))
+  print(anova(m2,m3))
+}
+
+
+
 
 
 
